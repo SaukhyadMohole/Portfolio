@@ -21,7 +21,7 @@ export const personalInfo = {
     "Cloud Enthusiast",
     "Machine Learning Enthusiast",
   ],
-  bio: `I'm a Computer Science & Data Science undergraduate at VIT Vellore with a 9.03 CGPA, passionate about building intelligent systems at the intersection of AI, cloud computing, and software engineering. From deploying serverless RAG chatbots on AWS to co-authoring IEEE research on multimodal AI for cancer detection, I thrive on solving complex problems with clean, scalable solutions. Recognized by NUS for the Best Capstone Project in their AI & ML Programme, I bring a strong foundation in full-stack development, machine learning, and cloud architecture.`,
+  bio: `I'm a Computer Science & Data Science undergraduate at VIT Vellore with a 9.06 CGPA, passionate about building intelligent systems at the intersection of AI, cloud computing, and software engineering. From deploying serverless RAG chatbots on AWS to co-authoring IEEE research on multimodal AI for cancer detection, I thrive on solving complex problems with clean, scalable solutions. Recognized by NUS for the Best Capstone Project in their AI & ML Programme, I bring a strong foundation in full-stack development, machine learning, and cloud architecture.`,
   languages: ["English", "Marathi", "Hindi", "Sanskrit", "Japanese"],
 };
 
@@ -31,7 +31,7 @@ export const education = {
   degree: "Bachelor of Technology",
   branch: "Computer Science & Engineering — Data Science",
   duration: "2023 – 2027 (Expected)",
-  cgpa: "9.03",
+  cgpa: "9.06",
   scale: "10.0",
 };
 
@@ -72,6 +72,7 @@ export const skills: SkillCategory[] = [
       { name: "Amazon S3" },
       { name: "IAM" },
       { name: "OpenSearch Serverless" },
+      { name: "Snowflake" },
     ],
   },
   {
@@ -149,30 +150,40 @@ export interface Experience {
 
 export const experiences: Experience[] = [
   {
-    role: "Software Engineering Intern",
-    company: "Summer Internship",
-    location: "Remote",
-    duration: "Summer 2025",
+    role: "Project Trainee – Software Development & Cloud",
+    company: "NIHILENT Technologies Pvt. Ltd.",
+    location: "Pune, Maharashtra",
+    duration: "May 2026 – Jun 2026",
     type: "Internship",
     description:
-      "Developed a fully serverless, cloud-native question-answering system powered by Retrieval-Augmented Generation (RAG) on AWS.",
+      "Contributed to the development of SpaceLabs using Amazon Bedrock and serverless AWS services. Developed RAG pipelines and an NL2SQL workflow using Amazon Bedrock and Snowflake.",
     responsibilities: [
-      "Built an AWS-integrated Generative AI chatbot using RAG for documents stored in S3",
-      "Implemented serverless architecture with AWS Lambda, API Gateway, and Amazon Bedrock",
-      "Designed and deployed OpenSearch Serverless vector store for semantic document retrieval",
-      "Created REST APIs with CORS support for cross-origin frontend integrations",
-      "Achieved context-aware, grounded responses using Amazon Nova Lite foundation model",
+      "Contributed to the development of SpaceLabs using Amazon Bedrock and serverless AWS services.",
+      "Developed RAG pipelines and an NL2SQL workflow using Amazon Bedrock and Snowflake.",
     ],
     technologies: [
-      "Python",
+      "AWS Bedrock",
       "AWS Lambda",
-      "Amazon Bedrock",
       "API Gateway",
-      "S3",
-      "OpenSearch Serverless",
-      "IAM",
+      "Amazon S3",
+      "RAG",
+      "Snowflake",
     ],
-    projects: ["AWS RAG Chatbot"],
+    projects: ["SpaceLabs", "NL2SQL Conversational Analytics"],
+  },
+  {
+    role: "Software Development Intern",
+    company: "BORASE CAPITAL",
+    location: "Pune, Maharashtra",
+    duration: "May 2025 – Jul 2025",
+    type: "Internship",
+    description:
+      "Enhanced an internal business application focused on data retrieval, analysis, and feature development.",
+    responsibilities: [
+      "Enhanced an internal business application focused on data retrieval, analysis, and feature development.",
+    ],
+    technologies: ["Python", "SQL", "Git", "VS Code"],
+    projects: [],
   },
 ];
 
@@ -194,34 +205,50 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: "aws-rag-chatbot",
-    title: "AWS RAG Chatbot",
+    id: "enterprise-rag-chatbot",
+    title: "Enterprise RAG Chatbot",
     shortDescription:
-      "Fully serverless, cloud-native Q&A system powered by Retrieval-Augmented Generation on AWS.",
+      "Enterprise Retrieval-Augmented Generation (RAG) chatbot enabling intelligent document question answering.",
     fullDescription:
-      "An AI-powered chatbot that answers questions from uploaded PDF documents using Retrieval-Augmented Generation (RAG) on AWS. The system ingests PDFs into S3, indexes them through Amazon Bedrock Knowledge Base backed by OpenSearch Serverless, and exposes a REST API for natural language Q&A.",
+      "Developed an enterprise Retrieval-Augmented Generation (RAG) chatbot using Amazon Bedrock, AWS Lambda, API Gateway, Amazon S3, and Knowledge Bases to enable intelligent document question answering.",
     category: "cloud",
     technologies: [
-      "Python",
+      "AWS Bedrock",
       "AWS Lambda",
-      "Amazon Bedrock",
       "API Gateway",
-      "OpenSearch Serverless",
       "Amazon S3",
-      "Amazon Nova Lite",
-      "IAM",
+      "Knowledge Bases",
+      "Python",
     ],
     features: [
-      "Retrieval-Augmented Generation for grounded answers",
-      "Serverless architecture — zero server management",
-      "REST API with CORS for frontend integration",
-      "Semantic vector search across document embeddings",
-      "PDF-based natural language question answering",
-      "Context-aware responses from actual document content",
+      "Intelligent document question answering",
+      "Retrieval-Augmented Generation (RAG) architecture",
+      "Integration with AWS serverless services",
+      "Enterprise-grade document security and retrieval",
     ],
     githubUrl: "https://github.com/SaukhyadMohole/AWS-RAG-Chatbot",
-    architecture:
-      "User → API Gateway → Lambda → Bedrock (RetrieveAndGenerate) → Knowledge Base + OpenSearch → Nova Lite → Response",
+    featured: true,
+  },
+  {
+    id: "nl2sql-conversational-analytics",
+    title: "NL2SQL Conversational Analytics",
+    shortDescription:
+      "Natural Language-to-SQL application converting user questions into executable database queries.",
+    fullDescription:
+      "Developed a Natural Language-to-SQL (NL2SQL) application integrating Amazon Bedrock with Snowflake to convert natural language into executable SQL queries for conversational analytics.",
+    category: "ai-ml",
+    technologies: [
+      "Amazon Bedrock",
+      "Snowflake",
+      "Python",
+      "SQL",
+      "GenAI",
+    ],
+    features: [
+      "Translates natural language questions to SQL",
+      "Integrates Bedrock LLMs with Snowflake data warehouses",
+      "Enables conversational analytics for business databases",
+    ],
     featured: true,
   },
   {
