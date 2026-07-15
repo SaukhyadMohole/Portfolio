@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     siteName: "Saukhyad Mohole Portfolio",
     images: [
       {
-        url: "https://saukhyad.vercel.app/profile.jpg",
+        url: "https://saukhyad.vercel.app/profile.png",
         width: 400,
         height: 400,
         alt: "Saukhyad Mohole",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     title: "Saukhyad Mohole — Software Developer & AI Engineer",
     description:
       "AI/ML Engineer, Cloud Architect, Full-Stack Developer. B.Tech CSE at VIT Vellore. CGPA 9.03.",
-    images: ["https://saukhyad.vercel.app/profile.jpg"],
+    images: ["https://saukhyad.vercel.app/profile.png"],
   },
   robots: {
     index: true,
@@ -88,7 +88,7 @@ export default function RootLayout({
               name: "Saukhyad Mohole",
               alternateName: "Mohole Saukhyad Bhupendra",
               url: "https://saukhyad.vercel.app",
-              image: "https://saukhyad.vercel.app/profile.jpg",
+              image: "https://saukhyad.vercel.app/profile.png",
               jobTitle: "Software Developer & AI Engineer",
               alumniOf: {
                 "@type": "CollegeOrUniversity",

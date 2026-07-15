@@ -9,7 +9,7 @@ export const personalInfo = {
   phone: "+91 8999009516",
   location: "Pune, Maharashtra, India",
   university: "Vellore Institute of Technology, Vellore",
-  avatarUrl: "/profile.jpg",
+  avatarUrl: "/profile.png",
   links: {
     github: "https://github.com/SaukhyadMohole",
     linkedin: "https://linkedin.com/in/saukhyad-mohole",
